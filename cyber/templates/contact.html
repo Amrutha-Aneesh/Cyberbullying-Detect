@@ -1,0 +1,44 @@
+{% extends 'base.html' %}{% block title %}Contact{% endblock %}
+{% block header %}
+  Contact Us
+{% endblock %}
+{% block content %}
+  <section class="bg-light">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card shadow-sm" style="border-radius: 15px">
+            <div class="card-body p-5">
+              <form>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Your Name</label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg">Subject</label>
+                  <input type="text" id="form3Example4cg" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg">Message</label>
+
+                  <textarea id="form3Example4cdg" class="form-control form-control-lg" name="message" cols="30" rows="7"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary btn-block btn-lg">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
